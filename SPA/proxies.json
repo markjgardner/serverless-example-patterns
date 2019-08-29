@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "default": {
+      "matchCondition": {
+        "methods": [ "GET" ],
+        "route": ""
+      },
+      "backendUri": "https://releasrfnsa.z20.web.core.windows.net/index.html",
+      "responseOverrides": {
+        "response.headers.Cache-Control": "no-store",
+        "response.headers.Pragma": "no-cache",
+        "response.headers.Expires": "0"
+      },
+      "debug": false
+    }
+  }
+}
